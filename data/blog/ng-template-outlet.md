@@ -89,3 +89,4 @@ All we need to do now is to mark `ng-template` with the template variable string
 ---
 Here's the full sample in stackblitz.
 <iframe class="stackblitz-embed" src="https://stackblitz.com/edit/ngtemplateoutlet-ngfor?embed=1&file=src/app/company-list/company-list.component.html"></iframe>
+<br>

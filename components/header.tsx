@@ -39,28 +39,30 @@ const Header = ({}: Props) => {
           </a>
         </Link> */}
         {mounted && (
-          <DarkModeSwitch
-            checked={isDarkMode}
-            onChange={toggleDarkMode}
-            size={20}
-            style={darkModeSwitchStyle}
-          />
-        )}
-        <br className="md:hidden" />
-        <div className="space-x-4">
-          <ActiveLink activeClassName="text-blue-1" href="/">
-            <a className="hover:text-blue-1">home</a>
-          </ActiveLink>
-          <ActiveLink activeClassName="text-blue-1" href="/about">
-            <a className="hover:text-blue-1">about</a>
-          </ActiveLink>
-          <ActiveLink activeClassName="text-blue-1" href="/projects">
-            <a className="hover:text-blue-1">projects</a>
-          </ActiveLink>
-          {/* <ActiveLink activeClassName="text-blue-1" href="/posts">
+          <>
+            <DarkModeSwitch
+              checked={isDarkMode}
+              onChange={toggleDarkMode}
+              size={20}
+              style={darkModeSwitchStyle}
+            />
+            <br className="md:hidden" />
+            <div className="space-x-4">
+              <ActiveLink activeClassName="text-blue-1" href="/">
+                <a className="hover:text-blue-1">home</a>
+              </ActiveLink>
+              <ActiveLink activeClassName="text-blue-1" href="/about">
+                <a className="hover:text-blue-1">about</a>
+              </ActiveLink>
+              <ActiveLink activeClassName="text-blue-1" href="/projects">
+                <a className="hover:text-blue-1">projects</a>
+              </ActiveLink>
+              {/* <ActiveLink activeClassName="text-blue-1" href="/posts">
             <a className="hover:text-blue-1">posts</a>
           </ActiveLink>{" "} */}
-        </div>
+            </div>
+          </>
+        )}
       </h1>
     </nav>
   );
