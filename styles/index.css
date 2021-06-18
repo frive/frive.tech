@@ -1,0 +1,134 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+.navbar {
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+@supports not (backdrop-filter: none) {
+  .navbar {
+    backdrop-filter: none;
+    @apply bg-opacity-100;
+  }
+}
+
+.remark-highlight pre {
+  @apply overflow-x-auto px-5 py-2 rounded-md border border-gray-200 bg-gray-50 dark:border-gray-700 dark:bg-gray-900;
+}
+
+.remark-highlight img {
+  /* Don't apply styles to next/image */
+  @apply m-0;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.token.punctuation {
+  @apply text-gray-700 dark:text-gray-300;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #f92672;
+}
+
+.token.boolean,
+.token.number {
+  color: #ff80f4;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #a6e22e;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  @apply text-yellow-500;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function {
+  color: #66d9ef;
+}
+
+.token.keyword {
+  color: #f92672;
+}
+
+.token.regex,
+.token.important {
+  color: #fd971f;
+}
+
+code[class*='language-'],
+pre[class*='language-'] {
+  @apply text-gray-800 dark:text-gray-50;
+}
+
+pre::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+code {
+  @apply text-gray-800 dark:text-gray-200 border px-1 py-0.5 border-gray-100 dark:border-gray-800 rounded-md bg-gray-100 dark:bg-gray-900;
+}
+
+a code {
+  @apply text-blue-400 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-600;
+}
+
+.remark-highlight pre code {
+  @apply p-0 border-none bg-transparent;
+}
+
+.remark-code-title {
+  @apply px-5 py-3 font-mono text-sm font-bold text-gray-800 bg-gray-200 border border-b-0 border-gray-200 rounded-t dark:text-gray-200 dark:border-gray-700 dark:bg-gray-800;
+}
+
+.remark-code-title + .remark-highlight pre {
+  @apply mt-0 rounded-t-none;
+}
+
+.stackblitz-embed {
+  @apply w-full h-96;
+}
