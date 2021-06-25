@@ -1,8 +1,8 @@
-import Avatar from "./avatar";
-import DateFormatter from "./date-formatter";
-import CoverImage from "./cover-image";
-import Link from "next/link";
-import Author from "../types/author";
+import Avatar from './avatar';
+import DateFormatter from './date-formatter';
+import CoverImage from './cover-image';
+import Link from 'next/link';
+import Author from '../types/author';
 
 type Props = {
   title: string;
@@ -25,7 +25,7 @@ const PostPreview = ({
 }: Props) => {
   return (
     <div>
-      <p className="text-xl mb-3 leading-snug">
+      <p className="text-xl mb-3 leading-snug dark:text-white">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>

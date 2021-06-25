@@ -47,7 +47,7 @@ const Header = ({}: Props) => {
               style={darkModeSwitchStyle}
             />
             <br className="md:hidden" />
-            <div className="space-x-4">
+            <div className="space-x-4 dark:text-white">
               <ActiveLink activeClassName="text-blue-1" href="/">
                 <a className="hover:text-blue-1">home</a>
               </ActiveLink>

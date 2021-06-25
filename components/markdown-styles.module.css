@@ -2,6 +2,11 @@
   @apply text-base leading-relaxed;
 }
 
+/* https://github.com/tailwindlabs/tailwindcss/issues/3258#issuecomment-770215347 */
+:global(.dark) .markdown {
+  @apply text-white;
+}
+
 .markdown p,
 .markdown ul,
 .markdown ol,
