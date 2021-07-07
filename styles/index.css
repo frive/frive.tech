@@ -15,6 +15,10 @@
 /* Your own custom utilities */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   position: sticky;
   z-index: 10;
@@ -131,4 +135,32 @@ a code {
 
 .stackblitz-embed {
   @apply w-full h-96;
+}
+
+.anchor {
+  @apply absolute invisible;
+
+  margin-left: -1em;
+  padding-right: 0.5em;
+  width: 80%;
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.anchor:hover {
+  @apply visible no-underline;
+}
+
+.anchor:after {
+  @apply text-gray-300 dark:text-gray-700;
+  content: '#';
+}
+
+*:hover > .anchor {
+  @apply visible no-underline;
+}
+
+.icon .icon-link {
+  position: relative;
+  top: 200px;
 }

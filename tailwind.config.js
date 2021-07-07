@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const { fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
@@ -28,7 +28,7 @@ module.exports = {
         tight: 1.2,
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter', ...fontFamily.sans],
       },
       boxShadow: {
         small: '0 5px 10px rgba(0, 0, 0, 0.12)',
@@ -76,22 +76,7 @@ module.exports = {
               },
               code: { color: theme('colors.blue.400') },
             },
-            h1: {
-              color: theme('colors.gray.100'),
-            },
-            h2: {
-              color: theme('colors.gray.100'),
-            },
-            h3: {
-              color: theme('colors.gray.100'),
-            },
-            h4: {
-              color: theme('colors.gray.100'),
-            },
-            h5: {
-              color: theme('colors.gray.100'),
-            },
-            h6: {
+            'h1,h2,h3,h4,h5,h6': {
               color: theme('colors.gray.100'),
             },
             strong: {
