@@ -164,3 +164,32 @@ a code {
   position: relative;
   top: 200px;
 }
+
+table {
+  @apply text-base border-separate w-full bg-gray-50 dark:bg-gray-900;
+  border-spacing: 0;
+}
+
+thead,
+tbody {
+  @apply text-gray-800 dark:text-gray-50;
+}
+
+th,
+td {
+  @apply p-2 border border-gray-200 dark:border-gray-700;
+}
+
+tr:first-child th:first-child {
+  @apply rounded-tl-md;
+}
+tr:first-child th:last-child {
+  @apply rounded-tr-md;
+}
+
+tr:last-child td:first-child {
+  @apply rounded-bl-md;
+}
+tr:last-child td:last-child {
+  @apply rounded-br-md;
+}

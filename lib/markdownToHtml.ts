@@ -5,6 +5,7 @@ import codeTitle from 'remark-code-titles';
 
 const slug = require('remark-slug');
 const headings = require('remark-autolink-headings');
+const gfm = require('remark-gfm');
 
 export default async function markdownToHtml(markdown: string) {
   const result = await remark()
@@ -14,6 +15,7 @@ export default async function markdownToHtml(markdown: string) {
         className: ['anchor'],
       },
     })
+    .use(gfm)
     .use(codeTitle)
     .use(prism)
     .use(html)
