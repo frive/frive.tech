@@ -34,7 +34,22 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 <title>
                   {SITE_NAME} | {post.title}
                 </title>
-                <meta property="og:image" content={post.ogImage.url} />
+                <meta content={post.excerpt} name="description" />
+                <meta
+                  property="og:url"
+                  content={`https://frive.tech${router.asPath}`}
+                />
+                <link
+                  rel="canonical"
+                  href={`https://frive.tech${router.asPath}`}
+                />
+                <meta property="og:type" content="article" />
+                <meta property="og:description" content={post.excerpt} />
+                <meta property="og:title" content={post.title} />
+                {/* <meta property="og:image" content={post.coverImage} /> */}
+                {post.date && (
+                  <meta property="article:published_time" content={post.date} />
+                )}
               </Head>
               <PostHeader
                 title={post.title}
@@ -66,6 +81,7 @@ export async function getStaticProps({ params }: Params) {
   const post = getPostBySlug(params.slug, [
     'title',
     'date',
+    'excerpt',
     'slug',
     'author',
     'content',

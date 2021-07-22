@@ -32,8 +32,10 @@ const Meta = () => {
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+      <meta name="robots" content="follow, index" />
       <meta name="description" content={`${SITE_NAME} - a tech blog`} />
       <meta property="og:image" content={HOME_OG_IMAGE_URL} />
+      <meta property="og:site_name" content={SITE_NAME} />
     </Head>
   );
 };

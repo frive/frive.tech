@@ -3,7 +3,7 @@ title: 'Manage IBMi source with git'
 excerpt: 'Learn how to manage IBMi source code with git.'
 date: '2018-11-01T05:35:07.322Z'
 author:
-  name: Eli Rivera
+  name: frive
 ogImage:
   url: ''
 ---

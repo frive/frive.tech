@@ -4,7 +4,7 @@ excerpt: 'Multi-slot content projection with angular''s NgTemplateOutlet'
 coverImage: '/assets/blog/preview/cover.jpg'
 date: '2021-05-04T05:35:07.322Z'
 author:
-  name: Eli Rivera
+  name: frive
 ogImage:
   url: '/assets/blog/preview/cover.jpg'
 ---

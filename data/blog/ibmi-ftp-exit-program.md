@@ -3,7 +3,7 @@ title: 'IBMi FTP exit program'
 excerpt: 'TIL: IBMi exit programs'
 date: '2018-11-27T05:35:07.322Z'
 author:
-  name: Eli Rivera
+  name: frive
 ogImage:
   url: ''
 ---

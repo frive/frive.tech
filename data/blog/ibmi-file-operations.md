@@ -4,7 +4,7 @@ excerpt: 'Replacing ASNA Datagate pt. 2: Convert native I/O file operations to S
 coverImage: '/assets/blog/preview/cover.jpg'
 date: '2019-08-19T05:35:07.322Z'
 author:
-  name: Eli Rivera
+  name: frive
 ogImage:
   url: '/assets/blog/preview/cover.jpg'
 ---

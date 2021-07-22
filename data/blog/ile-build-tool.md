@@ -4,7 +4,7 @@ excerpt: 'Build an ILE build tool for development and production deployment. Int
 coverImage: '/assets/blog/preview/cover.jpg'
 date: '2018-12-13T05:35:07.322Z'
 author:
-  name: Eli Rivera
+  name: frive
 ogImage:
   url: '/assets/blog/preview/cover.jpg'
 ---

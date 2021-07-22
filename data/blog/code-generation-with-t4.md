@@ -4,7 +4,7 @@ excerpt: 'Replacing ASNA Datagate pt. 1.34: Generate C# code from AVR'
 coverImage: '/assets/blog/preview/cover.jpg'
 date: '2019-07-19T05:35:07.322Z'
 author:
-  name: Eli Rivera
+  name: frive
 ogImage:
   url: '/assets/blog/preview/cover.jpg'
 ---

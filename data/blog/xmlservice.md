@@ -4,7 +4,7 @@ excerpt: 'Replacing ASNA Datagate pt. 1: Use XmlService to access DB2, system AP
 coverImage: '/assets/blog/preview/cover.jpg'
 date: '2019-06-10T05:35:07.322Z'
 author:
-  name: Eli Rivera
+  name: frive
 ogImage:
   url: '/assets/blog/preview/cover.jpg'
 ---
